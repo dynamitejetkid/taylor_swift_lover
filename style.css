@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: inherit;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Righteous', cursive;
+}
+html {
+    position: relative;
+    background: #fed2e9;
+    background: linear-gradient(90deg, #fed2e9 0%, #a9c1f3 100%);
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+h1, h2 {
+    color: #3D348B;
+    transform: rotate(-20deg); 
+    text-shadow: 8px 8px 1px #FC73BA;
+}
+h1 {
+    font-size: 8em;
+}
+h1:hover {
+    color: #FC73BA;
+    text-shadow: 8px 8px 1px #3D348B;
+    transition: 1s;
+    animation: beat-text 1.5s;
+}
+.change {
+    opacity: 1;
+    transition: 0.5s;
+}
+h2 {
+    font-size: 3em;
+    margin: -0.5em;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+/*animation du texte*/
+@keyframes beat-text {
+    0% {
+      transform: scale(1) rotate(-20deg); 
+    }
+    50% {
+      transform: scale(1.3) rotate(-20deg);
+    }
+  }
+
+/*animation des coeurs*/
+.heart {
+    position: absolute;
+    background-color: #FC73BA;
+    height: 3em;
+    width: 3em;
+    transform: rotate(-45deg);
+    animation-name: beat;
+    animation-iteration-count: infinite;
+    opacity: 0.8;
+}
+.heart:hover, .heart:hover.heart:before, .heart:hover.heart:after  {
+    background-color: #3D348B;
+}
+.heart:after {
+    background-color: #FC73BA;
+    content: "";
+    border-radius: 50%;
+    position: absolute;
+    width: 3em;
+    height: 3em;
+    top: 0;
+    left: 1.7em;
+}
+.heart:before {
+    background-color: #FC73BA;
+    content: "";
+    border-radius: 50%;
+    position: absolute;
+    width: 3em;
+    height: 3em;
+    top: -1.7em;
+    left: 0;
+  }
+@keyframes beat {
+    0% {
+      transform: scale(1) rotate(-45deg);
+    }
+    50% {
+      transform: scale(0.6) rotate(-45deg);
+    }
+  }
+
+/*les coeurs*/
+.heart1 {
+    top: 25%;
+    left: 20%;
+    animation-duration: 1.5s;
+}
+.heart2 {
+    top: 40%;
+    left: 30%;
+    animation-duration: 1.6s;
+}
+.heart3 {
+    top: 65%;
+    left: 20%;
+    animation-duration: 1.7s;
+}
+.heart4 {
+    top: 10%;
+    left: 75%;
+    animation-duration: 1.8s;
+}
+.heart5 {
+    top: 70%;
+    left: 60%;
+    animation-duration: 1.9s;
+}
+.heart6 {
+    top: 18%;
+    left: 60%;
+    animation-duration: 2s;
+}
+.heart7 {
+    top: 55%;
+    left: 80%;
+    animation-duration: 2.1s;
+}
+.heart8 {
+    top: 70%;
+    left: 40%;
+    animation-duration: 1.8s;
+}
+.heart9 {
+    top: 80%;
+    left: 15%;
+    animation-duration: 2.2s;
+}
+.heart10 {
+    top: 10%;
+    left: 45%;
+    animation-duration: 2.3s;
+}
+.heart11 {
+    top: 75%;
+    left: 85%;
+    animation-duration: 2.4s;
+}
+.heart12 {
+    top: 80%;
+    left: 70%;
+    animation-duration: 2.5s;
+}
+.heart13 {
+    top: 5%;
+    left: 10%;
+    animation-duration: 2.6s;
+}
+.heart14 {
+    top: 35%;
+    left: 5%;
+    animation-duration: 2.7s;
+}
+.heart15 {
+    top: 60%;
+    left: 5%;
+    animation-duration: 2.8s;
+}
+.heart16 {
+    top: 35%;
+    left: 70%;
+    animation-duration: 2.9s;
+}
+.heart17 {
+    top: 40%;
+    left: 83%;
+    animation-duration: 3s;
+}
+.heart18 {
+    top: 15%;
+    left: 85%;
+    animation-duration: 3.1s;
+}
